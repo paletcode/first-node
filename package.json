@@ -1,0 +1,19 @@
+{
+  "name": "node-ls-simple-command",
+  "version": "1.0.0",
+  "description": "This is a test of a simple command made with javascript using node",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paletcode/first-node.git"
+  },
+  "author": "Pablo Castillo - paletcode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paletcode/first-node/issues"
+  },
+  "homepage": "https://github.com/paletcode/first-node#readme"
+}

@@ -2,10 +2,9 @@ import fs from 'node:fs/promises'
 import { join } from 'node:path'
 
 
-const folder = process.argv[2] ?? '.'
 
 //funcion asincrona
-async function ls(folder) {
+export async function ls(folder) {
     let files
    //try para el await
     try {
@@ -39,4 +38,3 @@ async function ls(folder) {
     filesInfo.forEach(fileInfo => console.log(fileInfo))
 }
 
-ls(folder)
