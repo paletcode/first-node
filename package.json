@@ -18,5 +18,8 @@
   "homepage": "https://github.com/paletcode/first-node#readme",
   "dependencies": {
     "picocolors": "^1.0.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
   }
 }
