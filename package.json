@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/paletcode/first-node/issues"
   },
-  "homepage": "https://github.com/paletcode/first-node#readme"
+  "homepage": "https://github.com/paletcode/first-node#readme",
+  "dependencies": {
+    "picocolors": "^1.0.1"
+  }
 }

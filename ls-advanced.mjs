@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises'
 import { join } from 'node:path'
-
+import pc from 'picocolors'
 
 
 //funcion asincrona
@@ -20,7 +20,7 @@ export async function ls(folder) {
         try {
             fileStats = await fs.stat(filePath)
         } catch(err) {
-            console.log(`Error reading the file ${filePath} ${err}`)
+            console.error(pc.red(`Error reading the file ${filePath} ${err}`))
             process.exit(1) //si hay algun error, sale en 1
         }
 
@@ -30,7 +30,7 @@ export async function ls(folder) {
         const fileModified  = fileStats.mtime.toLocaleString()
 
 
-        return `${fileType} ${file.padEnd(20)} ${fileSize.toString().padStart(10).padEnd(20)} ${fileModified.padStart(10)}`
+        return `${fileType} ${pc.blue(file.padEnd(20))} ${pc.green(fileSize.toString().padStart(10).padEnd(20))} ${pc.yellow(fileModified.padStart(10))}`
     }
     )
 
